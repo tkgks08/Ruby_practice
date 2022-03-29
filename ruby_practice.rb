@@ -1,3 +1,4 @@
+##練習用
 LINE = "---------------"
 class BookApp
   WRITE_REVIEW = 0
