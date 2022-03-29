@@ -14,7 +14,8 @@ def write_review(posts)
   puts post
   puts "本の評価(1 ~ 5)を入力してください"
   post[:point] = gets.chomp.to_i
-
+  puts post[:point]
+  
   if post[:point] < 1 || post[:point] > 5
     puts "評価は1 ~ 5で入力してください"
     return
@@ -22,6 +23,7 @@ def write_review(posts)
 
   puts "本の感想を一言入力してください"
   post[:review] = gets.chomp
+
 
   posts << post
 end
