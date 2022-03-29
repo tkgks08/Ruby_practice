@@ -1,6 +1,6 @@
 #練習用
 
-LINE = ""---------------"
+LINE = "---------------"
 class BookApp
   WRITE_REVIEW = 0
   DISPLAY_REVIEW = 1
