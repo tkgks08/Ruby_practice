@@ -40,7 +40,7 @@ def display_review(posts)
   item = posts[input]
 
   puts LINE
-  puts "タイトル: #{item[:title]}"
+  puts "タイトル: #{item[:title]}"fda
   puts "評価: #{item[:point]}"
   puts "感想: #{item[:review]}"
   puts LINE

@@ -9,17 +9,16 @@ end
 
 players = []
 
-def greeting
+def greeting()
   puts "みなさんこんにちわ！"
   puts "よろしくお願いします。"
-  return
 end
 
 def wrtie_team_info(players)
     player = {}
-    puts "選手の名前を入力してください"
+    puts "チーム名入力してください"
     player[:name] = gets.chomp
-    puts "選手の評価を0~100で入力してください"
+    puts "チームの評価を0~100で入力してください"
     player[:assessment] = gets.chomp.to_i
 
     if player[:assessment] >100 || player[:assessment] < 0
@@ -29,7 +28,7 @@ def wrtie_team_info(players)
         return
     end
     
-    puts "選手に対する思いを書いてください"
+    puts "チームに対する思いを書いてください"
     player[:feeling] = gets.chomp
 
     players << player
@@ -42,7 +41,7 @@ def review_player_profile(players)
         wrtie_team_info(players)
     end
 
-    puts "閲覧したい選手を選んでください。"
+    puts "閲覧したいチームを選んでください。"
     index = 0
     players.each do |player|
         puts "#{index}: #{player[:name]}" 
