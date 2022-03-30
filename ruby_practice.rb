@@ -1,3 +1,5 @@
+#練習用
+
 LINE = "---------------"
 class BookApp
   WRITE_REVIEW = 0
@@ -9,9 +11,11 @@ def write_review(posts)
   post = {}
   puts "本のタイトルを入力してください"
   post[:title] = gets.chomp
+  puts post
   puts "本の評価(1 ~ 5)を入力してください"
   post[:point] = gets.chomp.to_i
-
+  puts post[:point]
+  
   if post[:point] < 1 || post[:point] > 5
     puts "評価は1 ~ 5で入力してください"
     return
@@ -19,6 +23,7 @@ def write_review(posts)
 
   puts "本の感想を一言入力してください"
   post[:review] = gets.chomp
+
 
   posts << post
 end
@@ -35,7 +40,7 @@ def display_review(posts)
   item = posts[input]
 
   puts LINE
-  puts "タイトル: #{item[:title]}"
+  puts "タイトル: #{item[:title]}"fda
   puts "評価: #{item[:point]}"
   puts "感想: #{item[:review]}"
   puts LINE
